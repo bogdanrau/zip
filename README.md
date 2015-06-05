@@ -1,12 +1,12 @@
 ## California ZIP Code Profiles
 
-This repository contains all of the code submitted and demoed at the California Health Care Foundation Code-A-Thon, held on 06/06/2015 - 06/07/2015. This dashboard is powered by data from multiple sources, including the [California Health & Human Services Open Data Portal](http://chhs.data.ca.gov), the [American Community Survey (ACS)](http://www.census.gov/acs/www/), the [Internal Revenue Service (IRS)](http://irs.gov), the [California Office of Environmental Health Hazard Assessment](http://www.oehha.ca.gov/ej/ces2.html), and Zillow.
+This repository contains all of the code submitted and demoed at the California Health Care Foundation Code-A-Thon, held on 06/06/2015 - 06/07/2015. This dashboard is powered by data from multiple sources, including the [California Health & Human Services Open Data Portal](http://chhs.data.ca.gov), the [American Community Survey (ACS)](http://www.census.gov/acs/www/), the [Internal Revenue Service (IRS)](http://irs.gov), the [California Office of Environmental Health Hazard Assessment](http://www.oehha.ca.gov/ej/ces2.html), and [Zillow](http://zillow.com).
 
 ### Authors
-This dashboard and all relevant data management were created by:
+This dashboard and all relevant data management were created/performed by:
 
-+ [Bogdan Rau](http://bogdanrau.com)
-+ Carl Ganz
++ [Bogdan Rau](http://bogdanrau.com) - dashboard design & development.
++ Carl Ganz - data management and statistical analysis.
 
 ### WARNING
 Data aggregation, management, and statistical analysis were all performed in under 24 hours, during the code-a-thon event. Due to the time constraints, users are advised not to use these data for any purposes that may involve financial or legal consequences. Many errors can occur during data management and analysis, including human and computer errors. These datasets have not been validated by industry experts.
