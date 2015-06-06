@@ -12,3 +12,4 @@
 vignettes/*.html
 vignettes/*.pdf
 zip.Rproj
+.Rproj.user

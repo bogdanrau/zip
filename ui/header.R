@@ -1,0 +1,3 @@
+header <- dashboardHeader(
+    title = "CommunityBeat"
+)
