@@ -7,12 +7,16 @@ library(RMySQL)         ## REQUIRED FOR CONNECTING TO MYSQL DATABASES
 library(reshape2)       ## REQUIRED FOR TABLE RESHAPING
 library(ggplot2)        ## REQUIRED FOR CHART GENERATION
 library(googleVis)      ## REQUIRED FOR INTERACTIVE CHART GENERATION
+library(dplyr)          ## REQUIRED FOR DATA MANIPULATION
+library(leaflet)        ## LEAFLET FOR MAPS
 
 app_version <- as.character("0.0.1")
 last_modified <- as.Date(file.info("ui.R")$mtime)
 
 ## LOAD ADDITIONAL SCRIPTS
 source("server/options.R", local=TRUE)
+source("scripts/functions.R", local=TRUE)
+load("zips.Rda")       ## LOAD ZIP CODES
 
 ## GLOBAL OPTIONS
 options(sqldf.driver = 'SQLite')    # Use SQLite driver. Needed to not conflict with RMySQL
