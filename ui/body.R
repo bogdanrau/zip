@@ -197,7 +197,7 @@ body <- dashboardBody(
             )
         ),
         fluidRow(
-            box(title = "MAPPER",
+            box(title = "MAPPER (Coming soon)",
                 status = "success",
                 solidHeader = TRUE,
                 width = 12,

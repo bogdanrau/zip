@@ -9,6 +9,7 @@ library(ggplot2)        ## REQUIRED FOR CHART GENERATION
 library(googleVis)      ## REQUIRED FOR INTERACTIVE CHART GENERATION
 library(dplyr)          ## REQUIRED FOR DATA MANIPULATION
 library(leaflet)        ## LEAFLET FOR MAPS
+library(ggmap)         ## USED TO REVERSE GEOCODE
 
 app_version <- as.character("0.0.1")
 last_modified <- as.Date(file.info("ui.R")$mtime)
