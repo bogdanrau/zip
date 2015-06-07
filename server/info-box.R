@@ -124,13 +124,13 @@ output$polutant_burden <- renderText({
     data <- data[1,1]
     
     if (data >= 0 & data <18.75) {
-        qualifier <- as.character("Great")
+        qualifier <- as.character("Very Low")
     } else if (data >= 18.75 & data < 41.33) {
-        qualifier <- as.character("Good")
+        qualifier <- as.character("Low")
     } else if (data >= 41.33 & data < 60.08) {
-        qualifier <- as.character("Bad")
+        qualifier <- as.character("High")
     } else if (data >= 60.08) {
-        qualifier <- as.character("Worse")
+        qualifier <- as.character("Very High")
     }
     
     data <- paste0(qualifier, " (", data, ")")
@@ -144,13 +144,13 @@ output$marketHealthIndex <- renderText({
     data <- data[1,1]
     
     if (data >= 0 & data < 2.77) {
-        qualifier <- as.character("Worse")
+        qualifier <- as.character("Very Low")
     } else if (data >= 2.77 & data < 5.17) {
-        qualifier <- as.character("Bad")
+        qualifier <- as.character("Low")
     } else if (data >= 5.17 & data < 7.57) {
-        qualifier <- as.character("Good")
+        qualifier <- as.character("High")
     } else if (data >= 7.57) {
-        qualifier <- as.character("Great")
+        qualifier <- as.character("Very High")
     }
 
     data <- paste0(qualifier, " (", data, ")")

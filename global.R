@@ -17,7 +17,8 @@ last_modified <- as.Date(file.info("ui.R")$mtime)
 ## LOAD ADDITIONAL SCRIPTS
 source("server/options.R", local=TRUE)
 source("scripts/functions.R", local=TRUE)
-load("zips.Rda")       ## LOAD ZIP CODES
+load("zips.Rda")        ## LOAD ZIP CODES
+load("AskCHISNE.Rda")   ## Load AskCHIS NE Data
 
 ## GLOBAL OPTIONS
 options(sqldf.driver = 'SQLite')    # Use SQLite driver. Needed to not conflict with RMySQL

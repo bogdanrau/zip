@@ -120,7 +120,13 @@ body <- dashboardBody(
                                             dataTableOutput("deaths"),
                                             br()),
                                      column(6,
-                                            htmlOutput("deathChart"))))
+                                            htmlOutput("deathChart")))),
+                        tabPanel("Health Behaviors & Outcomes",
+                                 fluidRow(
+                                     column(6, 
+                                            dataTableOutput("healthBehaviors")),
+                                     column(6,
+                                            dataTableOutput("healthOutcomes"))))
                     )
                 )
             ),

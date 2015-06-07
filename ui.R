@@ -1,4 +1,4 @@
- ## LOAD OUTSIDE SCRIPTS & RESOURCES
+## LOAD OUTSIDE SCRIPTS & RESOURCES
 source("global.R")
 source("ui/header.R", local=TRUE)
 source("ui/sidebar.R", local=TRUE)

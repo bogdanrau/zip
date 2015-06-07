@@ -261,3 +261,28 @@ output$deathChart <- renderGvis({
                                  height = '400'),
                              chartid='deathChart')
 })
+
+### HEATH BEHAVIORS & OUTCOMES
+output$healthOutcomes <- renderDataTable({
+    input$getData
+    data <- sqldf(paste0("SELECT Indicator, X", input$demographicZip, ", California FROM askchisne"))
+    healthOutcomes <- head(data,-4)
+    names(healthOutcomes)[2] <- paste0(input$demographicZip)
+    print(healthOutcomes)  
+} , options=list(pageLength = 5,
+               paging = FALSE,
+               searching = FALSE,
+               ordering = TRUE,
+               info = FALSE))
+
+output$healthBehaviors <- renderDataTable({
+    input$getData
+    data <- sqldf(paste0("SELECT Indicator, X", input$demographicZip, ", California FROM askchisne"))
+                  healthBehaviors <- data[-1:-10,]
+                  names(healthBehaviors)[2] <- paste0(input$demographicZip)
+                  print(healthBehaviors)  
+} , options=list(pageLength = 5,
+                 paging = FALSE,
+                 searching = FALSE,
+                 ordering = TRUE,
+                 info = FALSE))
